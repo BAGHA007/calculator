@@ -1,0 +1,92 @@
+
+<html>
+<html>
+<body>
+
+First number <input type="number" id = "mytext" class= "primary">
+<p>Second number<input type ="number" id = mynum class="primary">
+<input type="button" value="+"id =mybutton class="primary-btx">
+<input type="button" value="*" id = youbut class="primary-btx">
+<input type="button" value="-" id = subt class="primary-btx">
+<input type="button" value="/" id = division class="primary-btx">
+
+
+
+
+<script>
+
+document.getElementById("mybutton").onclick = function(){
+  
+  var a = document.getElementById("mytext").value;
+  var b = document.getElementById("mynum").value;
+  num1 = parseInt(a,10);
+  num2 = parseInt(b,10);
+  document.write(num1+num2);
+  
+}
+
+document.getElementById("youbut").onclick = function(){
+  
+  var a = document.getElementById("mytext").value;
+  var b = document.getElementById("mynum").value;
+  num1 = parseInt(a,10);
+  num2 = parseInt(b,10);
+  document.write(num1*num2);
+
+  
+}
+
+document.getElementById("subt").onclick = function(){
+  
+  var a = document.getElementById("mytext").value;
+  var b = document.getElementById("mynum").value;
+  num1 = parseInt(a,10);
+  num2 = parseInt(b,10);
+  document.write(num1-num2);
+  
+}
+
+document.getElementById("division").onclick = function(){
+  
+  var a = document.getElementById("mytext").value;
+  var b = document.getElementById("mynum").value;
+  num1 = parseInt(a,10);
+  num2 = parseInt(b,10);
+  document.write(num1/num2);
+  
+}
+</script>
+
+</script>
+<style>
+.primary{
+            width:350px;
+            height:20px;
+            font-size:15px;
+            
+            border: 1px inset #ccc;
+            border-radius:5px;
+            padding:12px;
+            resize: vertical;
+            margin-bottom:2px;
+            
+            }
+            
+            .primary-btx{
+                        color: white;
+                        background-color:#5890FF;
+             text-decoration:none;
+             padding-left:16px;
+             padding-right:17px;
+             padding-top:8px;
+             padding-bottom:10px;
+        
+             margin-left:10px;
+             margin-top:20px;
+             font-size:15px;
+             border-radius:10px;
+             border:2px outset #5890FF;
+             }
+       </style>
+</body>
+</html>
